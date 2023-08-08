@@ -19,6 +19,7 @@
 
         .preloader {
             text-align: center;
+            display: none; /* Initially hide the preloader */
         }
     </style>
 </head>
@@ -28,11 +29,17 @@
         <h1>Loading...</h1>
     </div>
     <script>
-        // Wait for the specified time (in milliseconds)
-        setTimeout(function () {
-            // Redirect to home.html
+        // Show the preloader initially
+        document.querySelector('.preloader').style.display = 'block';
+
+        // Wait for the page to be fully loaded
+        window.addEventListener('load', function () {
+            // Hide the preloader when the page is loaded
+            document.querySelector('.preloader').style.display = 'none';
+
+            // Redirect to home.html when it's fully loaded
             window.location.href = "home.html";
-        }, 3000); // 3000 milliseconds = 3 seconds
+        });
     </script>
 </body>
 
