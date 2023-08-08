@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Preloader</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .preloader {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <h1>Loading...</h1>
+    </div>
+    <script>
+        // Wait for the specified time (in milliseconds)
+        setTimeout(function () {
+            // Redirect to home.html
+            window.location.href = "home.html";
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+</body>
+
+</html>
