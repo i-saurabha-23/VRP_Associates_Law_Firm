@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRP Associates Law Firm</title>
+    <link rel="icon" href="assets/bow-tie-lawyer-advocate-criminal-law-court-law-firm-legal-profession-solicitor-advocate-png-clipart-thumbnail-removebg-preview.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .preloader {
+            text-align: center;
+            display: none; /* Initially hide the preloader */
+            animation: fadeIn 2s ease-in-out;
+            /* Customize the animation duration and easing as needed */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <h1>VRP Associates Law Firm</h1>
+        <h2>Loading...</h2>
+    </div>
+    <script>
+        // Add a delay for the preloader (e.g., 3 seconds)
+        setTimeout(function () {
+            // Show the preloader
+            document.querySelector('.preloader').style.display = 'block';
+
+            // Wait for the page to be fully loaded
+            window.addEventListener('load', function () {
+                // Hide the preloader when the page is loaded
+                document.querySelector('.preloader').style.display = 'none';
+
+                // Redirect to home.html when it's fully loaded
+                window.location.href = "home.html";
+            });
+        }, 3000); // 3000 milliseconds (3 seconds)
+    </script>
+</body>
+</html>

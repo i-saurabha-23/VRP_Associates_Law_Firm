@@ -20,12 +20,12 @@
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Partners</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Sign Up</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about-us.html">About Us</a></li>
+                    <li><a href="./partners.html">Partners</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                    <li><a href="./register.php">Sign Up</a></li>
+                    <li><a href="./login.php">Login</a></li>
                 </ul>
             </nav>
         </div>
